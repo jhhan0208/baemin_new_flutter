@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 import '../models/restaurant.dart';
-import '../data/restaurant_data.dart';
 
 class OrderScreen extends StatefulWidget {
   final List<CartItem> cartItems;
@@ -19,7 +18,6 @@ class OrderScreen extends StatefulWidget {
 
 class _OrderScreenState extends State<OrderScreen> {
   String _selectedPaymentMethod = '신용카드';
-  String _selectedDeliveryOption = '한집배달';
   bool _useCoupon = false;
   bool _useBaeminClub = true;
 

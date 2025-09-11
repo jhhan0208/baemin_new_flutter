@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
+import '../data/address_data.dart';
 import '../widgets/address_banner.dart';
 import '../widgets/search_bar_widget.dart';
 import '../widgets/service_tabs.dart';
 import '../widgets/category_grid.dart';
 import '../widgets/quick_access.dart';
 import 'search_screen.dart';
+import 'address_setting_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -66,7 +68,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildAddressButton() {
     return InkWell(
       onTap: () {
-        _showSnackBar('주소 설정 페이지로 이동');
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const AddressSettingScreen()),
+        );
       },
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -75,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(width: 4),
           Expanded(
             child: Text(
-              '공과대학 오른팔',
+              AddressData.getCurrentAddressTitle(),
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,

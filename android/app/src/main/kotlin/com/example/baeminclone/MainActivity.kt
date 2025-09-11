@@ -1,4 +1,4 @@
-package com.example.baemin_new
+package com.example.baeminclone
 
 import io.flutter.embedding.android.FlutterActivity
 

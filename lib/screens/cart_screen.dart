@@ -18,7 +18,6 @@ class CartScreen extends StatefulWidget {
 class _CartScreenState extends State<CartScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  int _selectedTabIndex = 0;
 
   late Restaurant _selectedRestaurant;
   late List<CartItem> _cartItems;

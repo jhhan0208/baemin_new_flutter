@@ -20,7 +20,6 @@ class RestaurantDetailScreen extends StatefulWidget {
 class _RestaurantDetailScreenState extends State<RestaurantDetailScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  int _selectedTabIndex = 0;
   int _cartItemCount = 0;
   final List<CartItem> _cartItems = [];
 

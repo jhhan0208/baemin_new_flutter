@@ -19,7 +19,6 @@ class SearchResultsScreen extends StatefulWidget {
 class _SearchResultsScreenState extends State<SearchResultsScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  int _selectedTabIndex = 0;
   List<Restaurant> _filteredRestaurants = [];
 
   @override
@@ -135,11 +134,6 @@ class _SearchResultsScreenState extends State<SearchResultsScreen>
             unselectedLabelColor: AppColors.textSecondary,
             indicatorColor: AppColors.textPrimary,
             indicatorWeight: 2,
-            onTap: (index) {
-              setState(() {
-                _selectedTabIndex = index;
-              });
-            },
             tabs: [
               const Tab(text: '전체'),
               Tab(text: '배달 $deliveryCount'),
