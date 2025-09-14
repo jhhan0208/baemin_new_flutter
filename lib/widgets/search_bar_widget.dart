@@ -24,7 +24,7 @@ class SearchBarWidget extends StatelessWidget {
         ),
         child: TextField(
           decoration: InputDecoration(
-            hintText: '음식점, 메뉴를 검색해보세요',
+            hintText: '사용자님, 서브웨이 어때요?',
             hintStyle: TextStyle(
               color: AppColors.textMuted,
               fontSize: 16,
