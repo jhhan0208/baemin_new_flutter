@@ -98,15 +98,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildAppBarActions() {
     return Row(
       children: [
-        IconButton(
-          icon: Icon(Icons.search, color: Colors.white, size: 24),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const SearchScreen()),
-            );
-          },
-        ),
+        //IconButton(
+        //  icon: Icon(Icons.search, color: Colors.white, size: 24),
+        //  onPressed: () {
+        //   Navigator.push(
+        //     context,
+        //      MaterialPageRoute(builder: (_) => const SearchScreen()),
+        //    );
+        //  },
+        //),
         IconButton(
           icon:
               Icon(Icons.notifications_outlined, color: Colors.white, size: 24),
